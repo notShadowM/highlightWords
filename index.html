@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        h4{
+            width: 110px;
+            font-weight: bold;
+            border: solid #000 1px;
+            text-align: center;
+            padding: 5px 10px;
+        }
+        .show{
+            margin-left: 150px;
+        }
+        .show p{
+            background-color: white;
+            height: 200px;
+            width: 570px;
+            border: solid #000 1px;
+            overflow: auto;
+        }
+        button{
+            padding: 5px 10px;
+            font-weight: bold;
+            width: 100px;
+            background-color: gray;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="main">
+            <h4>ARTICLE</h4>
+            <textarea class="first-area" rows="15" cols="70" id="textarea"></textarea>
+        </div>
+        <div class="con1">
+            <h4 style="background-color: yellow;">CONDITION 1</h4>
+            <textarea class="sec-area" cols="18" rows="15" id="cond1"></textarea>
+        </div>
+        <div class="con2">
+            <h4 style="background-color: cyan;">CONDITION 2</h4>
+            <textarea class="sec-area" cols="18" rows="15" id="cond2"></textarea>
+        </div>
+    </div>
+
+    <div class="show">
+        <h4>RESULT</h4>
+        <p id="show"></p>
+        <button id="btn">Start</button>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+</html>
